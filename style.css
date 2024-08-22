@@ -8,10 +8,13 @@
     --slate-900: hsl(218, 44%, 22%);
     --font-size: 15px;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
 body {
     height: 100svh;
     display: flex;
@@ -19,36 +22,32 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Outfit", sans-serif;
-    font-style: normal;
     font-size: var(--font-size);
     background-color: var(--slate-300);
 }
 
 .qr-component {
     background-color: white;
-    display: inline-block;
     padding: 16px 16px 40px 16px;
-    border-radius: 1.5em;
-    width: 288px;
+    border-radius: 1.35em;
+    max-width: 20rem;
+    min-height: 31.1875rem;
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    box-shadow: 0 1.5625em 1.5625em 0 rgba(0, 0, 0, .047);
+    gap: 1.5rem;
+    box-shadow: 0 1.5625rem 1.5625rem 0 rgba(0, 0, 0, .047);
 }
 
 .qr-component img {
-    width: 288px;
-    border-radius: .75em;
+    border-radius: .7em;
 }
 
 .text {
-    padding: 0 16px;
+    padding: 0 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    
-
+    gap: 1rem;
 }
 
 .bold-txt {
